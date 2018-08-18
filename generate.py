@@ -24,10 +24,6 @@ if __name__ == '__main__':
     #
     ffi.cdef(open('nng.i').read())
 
-    # The sock opts
-    #
-    ffi.cdef(open('defines.h').read())
-
     # Compile
     #
     ffi.compile(verbose=True)
